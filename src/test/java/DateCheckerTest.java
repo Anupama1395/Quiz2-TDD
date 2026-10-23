@@ -12,4 +12,14 @@ public class DateCheckerTest {
             "January should have 31 days"
         );
     }
+    @Test
+    void marchHas31Days() {
+        DateChecker checker = new DateChecker();
+
+        assertTrue(
+            checker.has31Days(Month.MARCH),
+            "March should have 31 days"
+        );
+    }
+    
 }
