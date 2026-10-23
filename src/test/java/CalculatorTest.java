@@ -9,4 +9,13 @@ public class CalculatorTest {
         Calculator calculator = new Calculator();
         assertEquals(8, calculator.sum(5, 3));
     }
+
+    @Test
+    void testSubtract() {
+    Calculator calculator = new Calculator();
+
+    assertEquals(2, calculator.subtract(5, 3));
+    assertEquals(-8, calculator.subtract(-5, 3));
+}
+
 }
