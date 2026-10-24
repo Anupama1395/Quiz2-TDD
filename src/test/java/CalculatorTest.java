@@ -41,5 +41,15 @@ public class CalculatorTest {
         assertTrue(calculator.isEven(4));
         assertFalse(calculator.isEven(5));
     }
+    @Test
+    void testDivideByZero() {
+        Calculator calculator = new Calculator();
 
+        assertThrows(
+            ArithmeticException.class,
+            () -> calculator.divide(10, 0)
+        );
+    }
 }
+
+
