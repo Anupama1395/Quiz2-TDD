@@ -6,18 +6,21 @@ public class Calculator {
     }
 
     public int subtract(int x, int y) {
-        return 0;
+        return x - y;
     }
 
     public int multiply(int x, int y) {
-        return 0;
+        return x * y;
     }
 
     public int divide(int x, int y) {
-        return 0;
+        if (y == 0) {
+            throw new ArithmeticException("Denominator cannot be zero");
+        }
+        return x / y;
     }
 
     public boolean isEven(int value) {
-        return false;
+        return value % 2 == 0;
     }
 }
